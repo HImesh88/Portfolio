@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himesh Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+        body {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu-slide {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-slide-hidden {
+            transform: translateX(100%);
+            pointer-events: none;
+        }
+
+        .menu-slide-visible {
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+
+        .img-container {
+            width: 300px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .imgbox {
+            width: 100%;
+            height: 0;
+            padding-top: 56%;
+            background: url('assets/homepic1.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            animation: imgchng 12s infinite;
+            border-radius: 5px;
+        }
+
+        @keyframes imgchng {
+            0% {
+                background: url('assets/DOWNLOAD_COMPILER_FOR.webp') no-repeat center center;
+                background-size: cover;
+            }
+
+            20% {
+                background: url('assets/homepic2.jpg') no-repeat center center;
+                background-size: cover;
+            }
+
+            50% {
+                background: url('assets/Screenshot_2024-06-26_211054.webp') no-repeat center center;
+                background-size: cover;
+            }
+
+            70% {
+                background: url('assets/homepic3.jpg') no-repeat center center;
+                background-size: cover;
+            }
+        }
+
+        .fbimg {
+            border-radius: 110%;
+        }
+         
+        #menu-items ul{
+            transition: height linear 3s all;
+        }
+        .img-container{
+            background: url(assets/dp.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-[#111111]">
+    <nav class="nav-bar font-bold h-20 w-full text-white flex justify-between items-center px-6  shadow-lg bg-black">
+        <p class="text-4xl md:ml-12 ml:10 "><span class="text-orange-500">" H</span><span class="text-rose-500">i</span><span
+                class="text-lime-300">m</span><span class="text-violet-500">e</span><span
+                class="text-amber-500">s</span><span class="text-fuchsia-600">H "</span></p>
+        <div class="hidden md:flex menu">
+            <ul class="flex gap-14 text-xl underline tracking-widest">
+                <li><a href="#home"
+                        class="font-bold cursor-pointer hover:text-yellow-300 transition duration-200">Home</a></li>
+                <li><a href="#about"
+                        class="font-semibold cursor-pointer hover:text-yellow-300 transition duration-200">About</a>
+                </li>
+                <li><a href="#projects"
+                        class="font-semibold cursor-pointer hover:text-yellow-300 transition duration-200">Projects</a>
+                </li>
+            </ul>   
+        </div>
+        <div class="hidden md:flex items-center">
+            <button
+                class="bg-gray-800 py-2.5 px-4 rounded-full hover:bg-gray-600 border-2 border-fuchsia-300 font-semibold" >Contact
+                me</button>
+        </div>
+        <p class="md:hidden block text-3xl p-4 cursor-pointer" id="menu-btn">☰</p>
+    </nav>
+    <div class="fixed w-full bg-black flex justify-center h-52 items-center hidden" id="menu-items">
+        <ul class="flex flex-col gap-5 text-xl text-center text-white cursor-pointer">
+            <a class="hover:text-rose-400 underline" href="#home">Home</a>
+            <a class="hover:text-rose-400 underline" href="#about">About</a>
+            <a class="hover:text-rose-400 underline" href="#projects">Projects</a>
+            <li class="text-rose-800 text-4xl" id="close-btn">x</li>
+        </ul>
+    </div>
+    <section id="home" class="flex flex-col justify-center mt-8 items-center h-[84vh]">
+         <div class="w-[400px] bg-black h-[500px] rounded-t-full flex flex-col justify-content items-center">
+                   <div class="bg-red-400 w-[240px] h-[250px] rounded-full img-container border-4 border-gray-400"></div>
+                   <p class="text-white text-4xl font-semibold mb-1 tracking-wider">Himesh Neupane</p>
+                   <p class="text-sm font-bold text-rose-800"><span class="text-violet-300">Thumbnail Designer </span>| <span class="text-amber-500">Front-End Developer</span></p>
+                   <div class="text-white  mt-12 px-10 py-4 flex justify-between gap-12 rounded-full bg-gradient-to-r from-slate-400 to-stone-400">
+                    <a href="https://www.facebook.com/bilarohh69"><img src="assets/facebook.png" alt="" width="30" class="cursor-pointer"> </a>
+                    <a href="https://www.instagram.com/hsemihenapuen__/"><img src="assets/instagram.png" alt="" width="30" class="cursor-pointer"></a>
+                    <a href="https://wa.me/9807974130"><img src="assets/whatsapp.png" alt="" width="30" class="cursor-pointer"></a>
+                   </div>
+         </div>
+         <div class="w-full bg-gray-300 mt-[80px] h-[1px] ">.</div>
+    </section>
+    <section class="w-full h-[100vh] bg-black" id="about">
+           <p class="text-white text-center text-3xl font-bold pt-3">About me:</p>
+           <p class="text-white m-5 text-balance text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur minus nemo sequi placeat ullam laboriosam blanditiis tempora ducimus asperiores, accusantium in impedit perferendis et perspiciatis quidem? Vero voluptatibus laborum vel ad! Nobis, placeat quod odit ipsam neque impedit beatae cupiditate sapiente nam eveniet alias unde repudiandae dolore dignissimos iusto inventore molestias saepe ipsum voluptate corrupti praesentium debitis quisquam adipisci laudantium. Ipsum veniam assumenda itaque placeat expedita incidunt at! Corporis commodi numquam nesciunt labore consequuntur eum obcaecati nihil harum. Ab, quidem officiis vel numquam quo veritatis dignissimos praesentium dicta explicabo aliquid maiores, molestias mollitia ipsa impedit itaque labore tempora laudantium tempore.</p>
+    </section>
+    <!-- <footer class="w-full h-30">
+        <div class="bg-gray-800 h-20 flex flex-col justify-center items-center">
+            <div class="">
+                <a href="https://www.facebook.com/bilarohh69" class=""><img src="assets/facebook.png" alt="" width="30"
+                        class="bg-white fbimg"></a>
+            </div>
+            <div class="text-white">© All right reserved-2024 "Himesh Neupane"</div>
+        </div>
+    </footer> -->
+
+    <script>
+         const menubtn = document.getElementById('menu-btn')
+         const menuitems=document.getElementById('menu-items')
+         menubtn.addEventListener('click',function(){
+            menuitems.classList.toggle("hidden")
+         })
+
+         window.addEventListener('resize',function(){
+            if(window.innerWidth > 768){
+                menuitems.classList.add("hidden")
+            }
+         })
+
+         const closebtn = document.getElementById('close-btn')
+         closebtn.addEventListener('click',function(){
+            menuitems.classList.add("hidden")
+         })
+    </script>
+</body>
+
+</html>
