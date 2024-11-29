@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+        body {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+       #menu-items{
+        float: right;
+        right: 0;
+       }
+
+        .fbimg {
+            border-radius: 110%;
+        }
+
+        #menu-items ul {
+            transition: height linear 3s all;
+        }
+
+        .img-container {
+            background: url(assets/dp.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        @media(max-width:768px){
+            .interest-sec{
+                 display: flex;
+                 flex-direction: column;
+            }
+            
+            .interest-act{
+                gap: 20px;
+            }
+        }
