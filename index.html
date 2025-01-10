@@ -1,97 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himesh Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Himesh Portfolio</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body class="bg-[#111111] overflow-x-hidden ">
-    <nav class="nav-bar font-bold h-20 w-[100%] text-white flex justify-between items-center px-6  shadow-lg bg-black"
-        id="nav">
-        <p class="text-4xl md:ml-12 ml:10 "><span class="text-orange-500">" H</span><span
-                class="text-rose-500">i</span><span class="text-lime-300">m</span><span
-                class="text-violet-500">e</span><span class="text-amber-500">s</span><span class="text-fuchsia-600">H
-                "</span></p>
-        <div class="hidden md:flex menu">
-            <ul class="flex gap-14 text-xl underline tracking-widest">
-                <li><a href="#home"
-                        class="font-bold cursor-pointer hover:text-yellow-300 transition duration-200">Home</a></li>
-                <li><a href="#about"
-                        class="font-semibold cursor-pointer hover:text-yellow-300 transition duration-200">About</a>
-                </li>
-                <li><a href="#projects"
-                        class="font-semibold cursor-pointer hover:text-yellow-300 transition duration-200">Projects</a>
-                </li>
-            </ul>
-        </div>
-        <div class="hidden md:flex items-center">
-            <button
-                class="bg-gray-800 py-2.5 px-4 rounded-full hover:bg-gray-600 border-2 border-fuchsia-300 font-semibold">Contact
-                me</button>
-        </div>
-        <p class="md:hidden block text-3xl p-4 cursor-pointer" id="menu-btn">☰</p>
-    </nav>
-    <div class="fixed w-40 bg-[#080808] flex justify-center h-52 items-center border-2 border-black hidden" id="menu-items">
-        <ul class="flex flex-col gap-3 text-xl text-center text-white cursor-pointer">
-            <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#home">Home</a>
-            <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#about">About</a>
-            <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#projects">Projects</a>
-            <li class="text-red-600 text-4xl" id="close-btn">x</li>
-        </ul>
-    </div>
-    <section id="home" class="flex flex-col justify-center mt-8 items-center h-[84vh]">
-        <div class="w-[360px] bg-black h-[500px] rounded-t-full flex flex-col justify-content items-center">
-            <div class="bg-red-400 w-[240px] h-[250px] rounded-full img-container border-4 border-gray-400 mt-4"></div>
-            <p class="text-white text-4xl font-semibold mb-1 tracking-wider">Himesh Neupane</p>
-            <p class="text-sm font-bold text-rose-800"><span class="text-violet-300">Thumbnail Designer </span>| <span
-                    class="text-amber-500">Front-End Developer</span></p>
-            <div
-                class="text-white  mt-12 px-10 py-4 flex justify-between gap-12 rounded-full bg-gradient-to-r from-slate-400 to-stone-400">
-                <a href="https://www.facebook.com/bilarohh69"><img src="assets/facebook.png" alt="" width="30"
-                        class="cursor-pointer"> </a>
-                <a href="https://www.instagram.com/hsemihenapuen__/"><img src="assets/instagram.png" alt="" width="30"
-                        class="cursor-pointer"></a>
-                <a href="https://wa.me/9807974130"><img src="assets/whatsapp.png" alt="" width="30"
-                        class="cursor-pointer"></a>
+    <body class="bg-[#111111] overflow-x-hidden ">
+        <img src="assets/DALL·E 2024-12-26 12.04.11 - A minimalistic starry sky with a deep blue background, featuring small, evenly scattered white stars. The design is simple, clean, and elegant, withou.webp" alt="" srcset="" class="hero-img">
+        <main class="relative main-container">
+            <div class="follow-ball"></div>
+            <div class="blur-ball"></div>
+            <nav class="nav-bar font-bold h-20 w-[100%] text-white flex justify-between items-center px-6 backdrop-blur-xl"
+                id="nav">
+                <p class="text-4xl md:ml-12 ml:10 "><span class="text-orange-500">" H</span><span
+                        class="text-rose-500">i</span><span class="text-lime-300">m</span><span
+                        class="text-violet-500">e</span><span class="text-amber-500">s</span><span
+                        class="text-fuchsia-600">H
+                        "</span></p>
+
+                <div class="hidden md:flex menu">
+                    <ul class="flex gap-14 text-lg tracking-widest">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contactme">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="md:hidden block text-3xl p-2 cursor-pointer hover:bg-zinc-800 rounded-xl" id="menu-btn">☰</p>
+
+            </nav>
+
+            <div class="fixed w-40 bg-[#080808] flex justify-center items-center border-2 border-black hidden" id="menu-items">
+                <ul class="flex flex-col gap-3 text-xl text-center text-white cursor-pointer">
+                    <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#home">Home</a>
+                    <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#about">About</a>
+                    <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#projects">Projects</a>
+                    <a href="#contactme" class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl">Contact me</a>
+                    <li class="text-red-600 text-4xl" id="close-btn">x</li>
+                </ul>
             </div>
-        </div>
-        <div class="w-full bg-black mt-[80px] h-[3px] ">.</div>
-    </section>
-    <section class="w-full h-[100vh] " id="about">
-        <p class="text-white text-center text-3xl font-bold pt-3 underline tracking-widest">About me:</p>
-        <p class="text-white m-5 text-center rounded-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-            minus nemo sequi placeat ullam laboriosam blanditiis tempora ducimus asperiores, accusantium in impedit
-            perferendis et perspiciatis quidem? Vero voluptatibus laborum vel ad! Nobis, placeat quod odit ipsam neque
-            impedit beatae cupiditate sapiente nam eveniet alias unde repudiandae dolore dignissimos iusto inventore
-            molestias saepe ipsum voluptate corrupti praesentium debitis quisquam adipisci laudantium. Ipsum veniam
-            assumenda itaque placeat expedita incidunt at! Corporis commodi numquam nesciunt labore consequuntur eum
-            obcaecati nihil harum. Ab, quidem officiis vel numquam quo veritatis dignissimos praesentium dicta explicabo
-            aliquid maiores, molestias mollitia ipsa impedit itaque labore tempora laudantium tempore.</p>
-        <div class="w-full">
-            <h1 class="text-3xl font-bold text-gray-300 text-center">My Interests:</h1>
-            <div class="w-full flex items-center justify-center  interest-sec md:gap-5 gap-3">
-                <div class="flex justify-evenly interest-act md:gap-5 gap-3">
-                    <div class="md:p-8 p-6 rounded-3xl mt-5 border-2 text-white hover:bg-gray-700 hover:text-gray-200 cursor-pointer hover:font-semibold transition ">Coding</div>
-                    <div class="md:p-8 p-6 rounded-3xl mt-5 border-2 text-white hover:bg-gray-700 hover:text-gray-200 cursor-pointer hover:font-semibold transition ">Designing</div>
-                    <div class="md:p-8 p-6 rounded-3xl mt-5 border-2 text-white hover:bg-gray-700 hover:text-gray-200 cursor-pointer hover:font-semibold transition ">Games</div>
-                </div>
-                <div class="flex justify-evenly interest-act md:gap-5 gap-3">
-                    <div class="md:p-8 p-6 rounded-3xl mt-5 border-2 text-white hover:bg-gray-700 hover:text-gray-200 cursor-pointer hover:font-semibold transition ">Music</div>
-                    <div class="md:p-8 p-6 rounded-3xl mt-5 border-2 text-white hover:bg-gray-700 hover:text-gray-200 cursor-pointer hover:font-semibold transition ">Travelling</div>
-                    <div class="md:p-8 p-6 rounded-3xl mt-5 border-2 text-white hover:bg-gray-700 hover:text-gray-200 cursor-pointer hover:font-semibold transition ">Reading</div>
-                </div>
-        </div>
-    </section>
-    <!-- <footer class="w-full h-30">
-        <div class="bg-gray-800 h-16 flex flex-col justify-center items-center">
-            <div class="text-white">© All right reserved-2024 | Himesh Neupane </div>
-        </div>
-    </footer> -->
-    <script src="script.js">  </script>
-</body>
 
-</html>
+            <section id="home" class="flex flex-col justify-center items-center h-[78vh] ">
+
+                <div class="w-[350px] h-[500px] rounded-t-full flex flex-col justify-content items-center hero-container">
+                    <div class="w-[200px] h-[200px] rounded-full img-container border-4 border-gray-400 mt-4">
+                    </div>
+                    <br>
+                    <p class="text-white text-4xl font-semibold mb-1 tracking-wider text-center mb-4 name-p">Himesh<br><span class="font-bold font-2xl">Neupane</span></p>
+                    <p class="text-sm font-bold text-rose-800"><span class="text-violet-300">Thumbnail Designer </span>|
+                        <span class="text-amber-500">Front-End Developer</span></p>
+                    <div
+                        class="text-white  mt-10 px-10 py-4 flex justify-between gap-12 rounded-full bg-gradient-to-r from-slate-400 to-stone-400">
+                        <a href="https://www.facebook.com/bilarohh69"><img src="assets/facebook.png" alt="" width="30"
+                                class="cursor-pointer"> </a>
+                        <a href="https://www.instagram.com/hsemihenapuen__/"><img src="assets/instagram.png" alt=""
+                                width="30" class="cursor-pointer"></a>
+                        <a href="https://wa.me/9807974130"><img src="assets/whatsapp.png" alt="" width="30"
+                                class="cursor-pointer"></a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <section class="screen-w-full" id="page2">
+            <div class="left-abt">
+                <h1></h1>
+            </div>
+            <div class="right-abt">
+
+            </div>
+        </section>
+        
+        <!-- <footer class="w-full h-30">
+            <div class="bg-gray-800 h-16 flex flex-col justify-center items-center">
+                <div class="text-white">© All right reserved-2024 | Himesh Neupane </div>
+            </div>
+        </footer> -->
+        <script src="script.js">  </script>
+    </body>
+
+    </html>
