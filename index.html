@@ -1,96 +1,116 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Himesh Portfolio</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himesh | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/31255.png">
+</head>
 
-    <body class="bg-[#111111] overflow-x-hidden ">
-        <img src="assets/DALL·E 2024-12-26 12.04.11 - A minimalistic starry sky with a deep blue background, featuring small, evenly scattered white stars. The design is simple, clean, and elegant, withou.webp" alt="" srcset="" class="hero-img">
-        <main class="relative main-container">
-            <div class="follow-ball"></div>
-            <div class="blur-ball"></div>
-            <nav class="nav-bar font-bold h-20 w-[100%] text-white flex justify-between items-center px-6 backdrop-blur-xl"
-                id="nav">
-                <p class="text-4xl md:ml-12 ml:10 "><span class="text-orange-500">" H</span><span
-                        class="text-rose-500">i</span><span class="text-lime-300">m</span><span
-                        class="text-violet-500">e</span><span class="text-amber-500">s</span><span
-                        class="text-fuchsia-600">H
-                        "</span></p>
+<body class="bg-[#111111] overflow-x-hidden ">
+    <img src="assets/background.webp" alt="" srcset="" class="hero-img">
+    <main class="relative main-container">
+        <div class="follow-ball"></div>
+        <div class="blur-ball"></div>
+        <nav class="nav-bar font-bold h-20 w-[100%] text-white flex justify-between items-center px-6 backdrop-blur-xl"
+            id="nav">
+            <p class="text-4xl md:ml-12 ml:10 "><span class="text-orange-500">&lt; H</span><span
+                    class="text-rose-500">i</span><span class="text-lime-300">m</span><span
+                    class="text-violet-500">e</span><span class="text-amber-500">s</span><span
+                    class="text-fuchsia-600">H
+                    &gt;</span></p>
 
-                <div class="hidden md:flex menu">
-                    <ul class="flex gap-14 text-lg tracking-widest">
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#contactme">Contact me</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <p class="md:hidden block text-3xl p-2 cursor-pointer hover:bg-zinc-800 rounded-xl" id="menu-btn">☰</p>
-
-            </nav>
-
-            <div class="fixed w-40 bg-[#080808] flex justify-center items-center border-2 border-black hidden" id="menu-items">
-                <ul class="flex flex-col gap-3 text-xl text-center text-white cursor-pointer">
-                    <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#home">Home</a>
-                    <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#about">About</a>
-                    <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#projects">Projects</a>
-                    <a href="#contactme" class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl">Contact me</a>
-                    <li class="text-red-600 text-4xl" id="close-btn">x</li>
+            <div class="hidden md:flex menu">
+                <ul class="flex gap-14 text-lg tracking-widest">
+                    <li>
+                        <a href="#home" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contactme">Contact me</a>
+                    </li>
                 </ul>
             </div>
 
-            <section id="home" class="flex flex-col justify-center items-center h-[78vh] ">
+            <p class="md:hidden block text-3xl p-2 cursor-pointer hover:bg-zinc-800 rounded-xl" id="menu-btn">☰</p>
 
-                <div class="w-[350px] h-[500px] rounded-t-full flex flex-col justify-content items-center hero-container">
-                    <div class="w-[200px] h-[200px] rounded-full img-container border-4 border-gray-400 mt-4">
-                    </div>
-                    <br>
-                    <p class="text-white text-4xl font-semibold mb-1 tracking-wider text-center mb-4 name-p">Himesh<br><span class="font-bold font-2xl">Neupane</span></p>
-                    <p class="text-sm font-bold text-rose-800"><span class="text-violet-300">Thumbnail Designer </span>|
-                        <span class="text-amber-500">Front-End Developer</span></p>
-                    <div
-                        class="text-white  mt-10 px-10 py-4 flex justify-between gap-12 rounded-full bg-gradient-to-r from-slate-400 to-stone-400">
-                        <a href="https://www.facebook.com/bilarohh69"><img src="assets/facebook.png" alt="" width="30"
-                                class="cursor-pointer"> </a>
-                        <a href="https://www.instagram.com/hsemihenapuen__/"><img src="assets/instagram.png" alt=""
-                                width="30" class="cursor-pointer"></a>
-                        <a href="https://wa.me/9807974130"><img src="assets/whatsapp.png" alt="" width="30"
-                                class="cursor-pointer"></a>
-                    </div>
+        </nav>
+
+        <div class="fixed w-40 bg-[#080808] flex justify-center items-center border-2 border-black hidden"
+            id="menu-items">
+            <ul class="flex flex-col gap-3 text-xl text-center text-white cursor-pointer">
+                <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#home">Home</a>
+                <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#about">About</a>
+                <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#projects">Projects</a>
+                <a href="#contactme" class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl">Contact me</a>
+                <li class="text-red-600 text-4xl" id="close-btn">x</li>
+            </ul>
+        </div>
+
+        <section id="home" class="flex flex-col justify-center items-center h-[78vh] ">
+
+            <div class="w-[350px] h-[500px] rounded-t-full flex flex-col justify-content items-center hero-container">
+                <div class="w-[200px] h-[200px] rounded-full img-container border-4 border-gray-400 mt-4">
                 </div>
-            </section>
-
-        </main>
-
-        <section class="screen-w-full" id="page2">
-            <div class="left-abt">
-                <h1></h1>
-            </div>
-            <div class="right-abt">
-
+                <br>
+                <p class="text-white text-4xl font-semibold mb-1 tracking-wider text-center mb-4 name-p">Himesh<br><span
+                        class="font-bold font-2xl">Neupane</span></p>
+                <p class="text-sm font-bold text-rose-800"><span class="text-violet-300">Thumbnail Designer </span>|
+                    <span class="text-amber-500">Front-End Developer</span>
+                </p>
+                <div
+                    class="text-white  mt-10 px-10 py-4 flex justify-between gap-12 rounded-full bg-gradient-to-r from-slate-400 to-stone-400">
+                    <a href="https://www.facebook.com/bilarohh69"><img src="assets/facebook.png" alt="" width="30"
+                            class="cursor-pointer"> </a>
+                    <a href="https://www.instagram.com/hsemihenapuen__/"><img src="assets/instagram.png" alt=""
+                            width="30" class="cursor-pointer"></a>
+                    <a href="https://wa.me/9807974130"><img src="assets/whatsapp.png" alt="" width="30"
+                            class="cursor-pointer"></a>
+                </div>
             </div>
         </section>
-        
-        <!-- <footer class="w-full h-30">
+
+    </main>
+
+    <section class="" id="page2">
+        <div class="about-container">
+            <div class="leftabt">
+                <p class="abt-title">LET ME <span class="text-purple-600">INTRODUCE</span> MYSELF</p>
+                <p class="intro">
+                    Meet Himesh Neupane!
+                    At just 16 years old, Himesh is already making waves as a passionate front-end developer with a keen eye
+                    for creativity and innovation. A proud Grade 10 student majoring in Computer Engineering, he’s driven by
+                    a deep love for crafting visually stunning and user-friendly digital experiences.
+    
+                    With a natural flair for thinking outside the box, Himesh is always ready to take on challenges and push
+                    the boundaries of design and development. Whether it’s building sleek interfaces or bringing unique
+                    ideas to life, he’s the go-to problem solver with an unrelenting drive to grow and excel.
+    
+                    Get ready to witness the rise of a future tech leader who combines technical skills with boundless
+                    creativity<span class="text-purple-600 font-bold">—because Himesh Neupane is just getting started!</span>
+                </p>
+            </div>
+            <div class="rightabt" id="rightabt">
+                <img src="assets/avatar-removebg-preview.png" alt="Avatar" class="avatar-image" id="avatar-img">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- <footer class="w-full h-30">
             <div class="bg-gray-800 h-16 flex flex-col justify-center items-center">
                 <div class="text-white">© All right reserved-2024 | Himesh Neupane </div>
             </div>
         </footer> -->
-        <script src="script.js">  </script>
-    </body>
+    <script src="script.js">  </script>
+</body>
 
-    </html>
+</html>

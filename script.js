@@ -41,4 +41,18 @@ maincontainer.addEventListener('mouseenter', function(){
     followball.style.scale="1"
 })
 
-//Text scrolling animation
+//image moving
+var rightcont = document.getElementById('rightabt');
+var avatar = document.getElementById('avatar-img') 
+rightcont.addEventListener('mousemove', function(dets){
+    avatar.style.transform=` rotateY(-${dets.clientY*0.3}deg)`
+})
+
+rightcont.addEventListener('mouseenter', function(){
+    avatar.style.scale="1.19"
+})
+
+rightcont.addEventListener('mouseleave', function(){
+    avatar.style.scale="1"
+    avatar.style.transform=``
+})
