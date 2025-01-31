@@ -38,6 +38,7 @@ body {
 .menu ul li a:hover,a.active{
     color: rgb(250, 177, 40);
     border-bottom: 3px solid rgb(255, 197, 22);
+    border-radius: 4px;
 }
 
 #menu-items {
@@ -159,6 +160,62 @@ body {
     animation: transform 0.1s;
 }
 
+.card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    align-items: center;
+    justify-content: center; 
+    padding: 10px; 
+}
+
+.card {
+    height: 250px;
+    max-height: 250px;
+    width: 300px;
+    min-width: 150px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.card-cont div:nth-child(1){
+    background: url(assets/bpadvisor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-cont div:nth-child(2){
+    background: url(assets/palcare.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-cont div:nth-child(3){
+    background: url(assets/weatherapp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-cont div:nth-child(4){
+    background: url(assets/randonnum.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* responsive */
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
@@ -196,3 +253,33 @@ body {
         max-width: 150px;
     }
 }
+
+@media (max-width: 1024px) {
+    .card {
+        width: 250px; 
+    }
+    .card-cont {
+        gap: 15px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 200px; 
+        height: 200px;
+    }
+    .card-cont {
+        gap: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        height: 180px; 
+    }
+    .card-cont {
+        flex-direction: column; 
+    }
+}
+

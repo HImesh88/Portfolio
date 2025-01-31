@@ -56,3 +56,19 @@ rightcont.addEventListener('mouseleave', function(){
     avatar.style.scale="1"
     avatar.style.transform=``
 })
+
+function director1(){
+    location.href="https://bp-advisor.vercel.app/"
+}
+
+function director2(){
+    location.href="https://palcare.vercel.app/"
+}
+
+function director3(){
+    location.href="https://weatherapp-lac-nu.vercel.app/"
+}
+
+function director4(){
+    location.href="https://randomnumgen-sooty.vercel.app/"
+}
