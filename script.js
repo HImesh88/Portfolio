@@ -57,6 +57,7 @@ rightcont.addEventListener('mouseleave', function(){
     avatar.style.transform=``
 })
 
+//
 function director1(){
     location.href="https://bp-advisor.vercel.app/"
 }
