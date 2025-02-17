@@ -8,8 +8,28 @@ body {
     font-family: "Space Grotesk", serif;
 }
 
-/* landing page */
+/* loader */
 
+.loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 5;
+    color: white;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loader.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+/* main */
 .hero-img{
     object-fit: cover;
     position: fixed;
