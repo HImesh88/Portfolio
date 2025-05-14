@@ -15,10 +15,10 @@ body {
 .loader {
     top: 0%;
     left: 0%;
-    transition: all 600ms;
+    /* transition: all 600ms; */
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     background-color: black;
     z-index: 5;
     color: white;
@@ -35,6 +35,7 @@ body {
 }
 
 .loader-text {
+    transition: all 600ms;
     font-size: 100px;
 }
 

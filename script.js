@@ -83,7 +83,7 @@ var loaderText = document.querySelector(".loader-text");
 window.addEventListener("DOMContentLoaded", () => {
     let textNum = 0, ran
     let textInterval = setInterval(() => {
-        ran = Math.round(Math.random() * 24) + 1
+        ran = Math.round(Math.random() * 20) + 1
         textNum += ran
         console.log(textNum)
         if (textNum >= 90){
