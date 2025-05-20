@@ -60,11 +60,11 @@ rightcont.addEventListener('mouseleave', function(){
 
 //
 function director1(){
-    location.href="https://bp-advisor.vercel.app/"
+    location.href="https://letsrpc.vercel.app/"
 }
 
 function director2(){
-    location.href="https://palcare.vercel.app/"
+    location.href="https://mountcareintl.com/conn"
 }
 
 function director3(){
