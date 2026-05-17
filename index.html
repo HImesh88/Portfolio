@@ -4,137 +4,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himesh | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio | Himesh</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/31255.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+       (function(){
+          emailjs.init("2mKY0yW2KQojjMQKc");
+       })();
+    </script>
 </head>
 
-<body class="bg-[#111111] overflow-x-hidden ">
-    <div class="loader">
-        <p class="font-bold loader-text p-4 animate-pulse text-center">
-            <span class="text-red-500 text-5xl">HIMESH NEUPANE<br></span>
-            <span class="text-3xl">SINCE 2008</span>
-        </p>
+<body>
+    <div class="pointer"></div>
+
+    <nav id="home">
+        <div class="leftnav">
+            <p class="lobster-two-regular md:text-3xl text-2xl">Mr. <span class="lobster-two-regular text-3xl text-red-600 md:text-4xl">Himesh</span> N</p>
+        </div>
+
+        <div class="rightnav items-center gap-8 mr-6 font-['Poppins']">
+            <a href="#home" class="text-xl font-medium text-red-700 transition-all duration-300">Home</a>
+            <a href="#about" class="text-xl font-medium hover:text-red-700 transition-all duration-300">About</a>
+            <a href="#projects" class="text-xl font-medium hover:text-red-700 transition-all duration-300">Projects</a>
+            <a href="#contact" class="text-xl font-medium hover:text-red-700 transition-all duration-300">Contact</a>
+        </div>
+
+        <p class="icon">☰</p>
+    </nav>
+
+    <!-- Responsive Menu -->
+    <div class="responav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
-    <img src="assets/background.webp" alt="" srcset="" class="hero-img">
-    <main class="relative main-container" id="home">
-        <div class="follow-ball"></div>
-        <div class="blur-ball"></div>
-        <nav class="nav-bar font-bold h-20 w-[100%] text-white flex justify-between items-center px-6 backdrop-blur-xl"
-            id="nav">
-            <p class="text-4xl md:ml-12 ml:10 "><span class="text-orange-500">&lt; H</span><span
-                    class="text-rose-500">i</span><span class="text-lime-300">m</span><span
-                    class="text-violet-500">e</span><span class="text-amber-500">s</span><span
-                    class="text-fuchsia-600">H
-                    &gt;</span></p>
 
-            <div class="hidden md:flex menu">
-                <ul class="flex gap-14 text-lg tracking-widest">
-                    <li>
-                        <a href="#home" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="#page2">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contactme">Contact me</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- MAIN SECTION -->
+    <section class="min-h-[80vh] flex items-center text-black px-6 py-10 sm:px-10 lg:px-16">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center w-full">
 
-            <p class="md:hidden block text-3xl p-2 cursor-pointer hover:bg-zinc-800 rounded-xl" id="menu-btn">☰</p>
+            <div class="text-center lg:text-left space-y-4">
+                <h1 class="text-3xl sm:text-4xl font-extrabold leading-snug">
+                    Greetings from <br>
+                    <span class="text-red-600">Himesh Neupane</span>
+                </h1>
 
-        </nav>
-
-        <div class="fixed w-40 bg-[#080808] flex justify-center items-center border-2 border-black hidden"
-            id="menu-items">
-            <ul class="flex flex-col gap-3 text-xl text-center text-white cursor-pointer">
-                <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#home">Home</a>
-                <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#page2">About</a>
-                <a class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl" href="#projects">Projects</a>
-                <a href="#contactme" class="hover:text-rose-300 px-4 py-1 hover:bg-gray-600 rounded-3xl">Contact me</a>
-                <li class="text-red-600 text-4xl" id="close-btn">x</li>
-            </ul>
-        </div>
-
-        <section class="flex flex-col justify-center items-center h-[78vh]">
-            <div class="w-[350px] h-[500px] rounded-t-full flex flex-col justify-content items-center hero-container">
-                <div class="w-[200px] h-[200px] rounded-full img-container border-4 border-gray-400 mt-4">
-                </div>
-                <br>
-                <p class="text-white text-4xl font-semibold mb-1 tracking-wider text-center mb-4 name-p">Himesh<br><span
-                        class="font-bold font-2xl">Neupane</span></p>
-                <p class="text-sm font-bold text-rose-800"><span class="text-violet-300">Thumbnail Designer </span>|
-                    <span class="text-amber-500">Front-End Developer</span>
+                <p class="text-gray-700 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    Mathematics & Computer Science enthusiast focused on AI, modern tech, and building meaningful digital experiences.
                 </p>
-                <div class="text-white  mt-10 px-10 py-4 flex justify-between gap-12 rounded-full bg-gradient-to-r from-slate-400 to-stone-400">
-                    <a href="https://www.facebook.com/bilarohh69"><img src="assets/facebook.png" alt="" width="30"
-                            class="cursor-pointer"> </a>
-                    <a href="https://www.instagram.com/hsemihenapuen__/"><img src="assets/instagram.png" alt=""
-                            width="30" class="cursor-pointer"></a>
-                    <a href="https://wa.me/+9779807974130"><img src="assets/whatsapp.png" alt="" width="30"
-                            class="cursor-pointer"></a>
+
+                <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
+                    <a href="assets/himeshresume.pdf" download>
+                        <button class="px-5 py-2 bg-red-500 hover:bg-red-600 text-white text-sm font-medium rounded-lg shadow-md transition">
+                            View Resume
+                        </button>
+                    </a>
+
+                    <a href="#about">
+                        <button class="px-5 py-2 border border-gray-400 hover:border-red-500 hover:text-red-600 text-sm rounded-lg transition">
+                            Explore Projects
+                        </button>
+                    </a>
                 </div>
             </div>
-        </section>
 
-    </main>
+            <div class="flex flex-col items-center space-y-5">
+                <div class="relative">
+                    <img src="assets/dp.jpeg" alt="Himesh Neupane" class="w-60 h-58 rounded-full object-cover border-4 border-red-400">
+                </div>
 
-    <section class="" id="page2">
-        <div class="about-container">
-            <div class="leftabt">
-                <p class="abt-title">LET ME <span class="text-purple-600">INTRODUCE</span> MYSELF</p>
-                <p class="intro">
-                    Meet Himesh Neupane!
-                    At just 16 years old, Himesh is already making waves as a passionate front-end developer with a keen
-                    eye
-                    for creativity and innovation. A proud Grade 10 student majoring in Computer Engineering, he’s
-                    driven by
-                    a deep love for crafting visually stunning and user-friendly digital experiences.
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="cursor-pointer hover:bg-red-100 px-3 py-1 text-xs font-medium bg-red-50 text-black-700 border border-red-300 rounded-full">AI Enthusiast</span>
+                    <span class="cursor-pointer hover:bg-red-100 px-3 py-1 text-xs font-medium bg-red-50 text-black-700 border border-red-300 rounded-full">Web Developer</span>
+                    <span class="cursor-pointer hover:bg-red-100 px-3 py-1 text-xs font-medium bg-red-50 text-black-700 border border-red-300 rounded-full">Mathematics Enthusiast • Mentor at PadhaiMantra.com</span>
+                </div>
+            </div>
 
-                    With a natural flair for thinking outside the box, Himesh is always ready to take on challenges and
-                    push
-                    the boundaries of design and development. Whether it’s building sleek interfaces or bringing unique
-                    ideas to life, he’s the go-to problem solver with an unrelenting drive to grow and excel.
+        </div>
+    </section>
+    <section id="about" class="min-h-screen bg-white overflow-hidden px-6 sm:px-8 lg:px-16 py-24">
+    <div class="max-w-7xl mx-auto">
 
-                    Get ready to witness the rise of a future tech leader who combines technical skills with boundless
-                    creativity<span class="text-purple-600 font-bold">—because Himesh Neupane is just getting
-                        started!</span>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+            <div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight text-gray-900">
+                    Passionate About <span class="text-red-600">Technology</span> & Learning
+                </h1>
+
+                <p class="mt-8 text-gray-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    I’m Himesh Neupane — a mathematics mentor and tech enthusiast passionate about creating modern digital experiences while helping students learn mathematics in a practical and engaging way.
                 </p>
-            </div>
-            <div class="rightabt" id="rightabt">
-                <img src="assets/avatar-removebg-preview.png" alt="Avatar" class="avatar-image" id="avatar-img">
-            </div>
-        </div>
-    </section>
 
-    <section id="projects">
-        <h1 class="text-4xl text-violet-600 font-bold text-center mt-4 uppercase">Projects</h1>
-        <div class="card-cont mt-4">
-            <div class="card" onclick="director1()"></div>
-            <div class="card" onclick="director2()"></div>
-            <div class="card" onclick="director3()"></div>
-            <div class="card" onclick="director4()"></div>
-        </div>
-    </section>
-    
-    <section>
-        
-    </section>
+                <p class="mt-5 text-gray-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    I enjoy exploring AI, frontend development, and continuously learning modern technologies that solve real-world problems creatively.
+                </p>
 
-    <footer class="w-full h-30 mt-10 flex justify-center flex-col items-center">
-            <div class="h-[35px] w-[60px] bg-gray-800 rounded-t-full text-white text-3xl flex items-center justify-center p-3"><a href="#home" class="p-3">🔝</a></div>
-            <div class="bg-gray-800 h-16 flex flex-col justify-center items-center w-full">
-                <div class="text-white">© All right reserved-2024 | Himesh Neupane </div>
+                <div class="mt-10 flex flex-wrap gap-3">
+                    <span class="px-4 py-2 rounded-xl bg-red-50 text-red-600 border border-red-100 text-sm font-medium hover:bg-red-600 hover:text-white transition duration-300">HTML & CSS</span>
+                    <span class="px-4 py-2 rounded-xl bg-pink-50 text-pink-600 border border-pink-100 text-sm font-medium hover:bg-pink-600 hover:text-white transition duration-300">Tailwind CSS</span>
+                    <span class="px-4 py-2 rounded-xl bg-orange-50 text-orange-600 border border-orange-100 text-sm font-medium hover:bg-orange-500 hover:text-white transition duration-300">JavaScript</span>
+                    <span class="px-4 py-2 rounded-xl bg-blue-50 text-blue-600 border border-blue-100 text-sm font-medium hover:bg-blue-600 hover:text-white transition duration-300">ReactJs</span>
+                    <span class="px-4 py-2 rounded-xl bg-purple-50 text-purple-600 border border-purple-100 text-sm font-medium hover:bg-purple-600 hover:text-white transition duration-300">AI Enthusiast</span>
+                    <span class="px-4 py-2 rounded-xl bg-orange-50 text-orange-600 border border-orange-100 text-sm font-medium hover:bg-orange-500 hover:text-white transition duration-300">PHP, MySQL</span>
+                    <span class="px-4 py-2 rounded-xl bg-purple-50 text-purple-600 border border-purple-100 text-sm font-medium hover:bg-purple-600 hover:text-white transition duration-300">C, C++</span>
+                    <span class="px-4 py-2 rounded-xl bg-green-50 text-green-600 border border-green-100 text-sm font-medium hover:bg-green-600 hover:text-white transition duration-300">Teaching</span>
+                </div>
             </div>
+
+            <div class="relative">
+                <div class="absolute -top-10 -left-10 w-40 sm:w-72 h-40 sm:h-72 bg-red-200/40 blur-3xl rounded-full"></div>
+
+                <div class="relative bg-white/80 backdrop-blur-xl border border-white shadow-[0_20px_60px_rgba(0,0,0,0.08)] rounded-[2.5rem] p-6 sm:p-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+
+                        <div class="bg-gradient-to-br from-red-50 to-white rounded-3xl p-5 sm:p-6 border border-red-100 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+                            <div class="text-4xl mb-4">💡</div>
+                            <h3 class="text-xl font-bold text-gray-900">Creativity</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-gray-500">Designing smooth and engaging digital experiences.</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-pink-50 to-white rounded-3xl p-5 sm:p-6 border border-pink-100 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+                            <div class="text-4xl mb-4">🚀</div>
+                            <h3 class="text-xl font-bold text-gray-900">Innovation</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-gray-500">Exploring modern technologies and AI tools.</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-orange-50 to-white rounded-3xl p-5 sm:p-6 border border-orange-100 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+                            <div class="text-4xl mb-4">📚</div>
+                            <h3 class="text-xl font-bold text-gray-900">Mentorship</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-gray-500">Helping students learn mathematics confidently.</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-purple-50 to-white rounded-3xl p-5 sm:p-6 border border-purple-100 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+                            <div class="text-4xl mb-4">🌍</div>
+                            <h3 class="text-xl font-bold text-gray-900">Vision</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-gray-500">Building meaningful solutions for the future.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+    <section id="projects" class="bg-gray-50 px-4 sm:px-10 lg:px-16 py-16 sm:py-20">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h1 class="text-3xl sm:text-4xl font-black text-center text-gray-900">
+                My Projects
+            </h1>
+
+            <p class="text-center text-gray-600 mt-3 text-sm sm:text-base max-w-xl mx-auto">
+                A few selected projects built with JavaScript, APIs, and real-world problem solving.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="assets/iweather.png" class="w-full h-36 object-cover object-center">
+                    <div class="p-4">
+                        <h2 class="text-lg font-bold">Weather App</h2>
+                        <p class="text-sm text-gray-600 mt-1">Live weather using API.</p>
+                        <div class="mt-3 flex gap-2">
+                            <a href="https://github.com/HImesh88/weatherapp" class="px-3 py-1 bg-gray-900 text-white rounded text-xs">GitHub</a>
+                            <a href="https://weatherapp-lac-nu.vercel.app/" class="px-3 py-1 bg-red-500 text-white rounded text-xs">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="assets/rpc.png" class="w-full h-36 object-cover object-center">
+                    <div class="p-4">
+                        <h2 class="text-lg font-bold">Rock Paper Scissors</h2>
+                        <p class="text-sm text-gray-600 mt-1">Simple JS game logic project.</p>
+                        <div class="mt-3 flex gap-2">
+                            <a href="https://github.com/HImesh88/letsrpc" class="px-3 py-1 bg-gray-900 text-white rounded text-xs">GitHub</a>
+                            <a href="https://letsrpc.vercel.app/" class="px-3 py-1 bg-red-500 text-white rounded text-xs">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="assets/palcare.png" class="w-full h-36 object-cover object-center">
+                    <div class="p-4">
+                        <h2 class="text-lg font-bold">PalCare</h2>
+                        <p class="text-sm text-gray-600 mt-1">Blood donation platform.</p>
+                        <div class="mt-3 flex gap-2">
+                            <a href="https://github.com/HImesh88/palcare" class="px-3 py-1 bg-gray-900 text-white rounded text-xs">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="assets/farmer.png" class="w-full h-36 object-cover object-center">
+                    <div class="p-4">
+                        <h2 class="text-lg font-bold">FarmGrow</h2>
+                        <p class="text-sm text-gray-600 mt-1">Farmer empowerment platform.</p>
+                        <div class="mt-3 flex gap-2">
+                            <a href="https://github.com/HImesh88/farmgrow" class="px-3 py-1 bg-gray-900 text-white rounded text-xs">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="contact" class="bg-gradient-to-b from-white to-red-50 px-6 sm:px-10 lg:px-16 py-20">
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- HEADER -->
+        <div class="text-center mb-14">
+            <h1 class="text-4xl sm:text-5xl font-black text-gray-900">
+                Let’s <span class="text-red-600">Connect</span>
+            </h1>
+
+            <p class="text-gray-600 mt-3 text-sm sm:text-base max-w-xl mx-auto">
+                Have an idea, project, or opportunity? Feel free to reach out — I usually respond quickly.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+            <div class="relative">
+
+                <div class="absolute -inset-1 bg-red-200 blur-2xl opacity-40 rounded-3xl"></div>
+
+                <div class="relative bg-white rounded-3xl shadow-xl p-8 sm:p-10 border border-red-100">
+
+                    <h2 class="text-xl font-bold text-gray-900 mb-6">
+                        Send a Message ✉️
+                    </h2>
+
+                    <form id="contact-form" class="space-y-5">
+
+                        <input type="text" name="name" placeholder="Your Name"
+                            class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-400 transition">
+
+                        <input type="email" name="email" placeholder="Your Email"
+                            class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-400 transition">
+
+                        <textarea name="message" rows="5" placeholder="Your Message"
+                            class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-400 transition resize-none"></textarea>
+
+                        <button type="submit"
+                            class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-xl font-semibold shadow-md transition active:scale-[0.98]">
+                            Send Message 🚀
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center space-y-6">
+
+                <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-xl transition">
+                    <h2 class="text-lg font-bold text-gray-900">📧 Email</h2>
+                    <p class="text-gray-600 mt-2">officialhimesh69@gmail.com</p>
+                </div>
+
+                <a href="https://wa.me/9779705666440" target="_blank"
+                    class="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white p-6 sm:p-8 rounded-3xl shadow-lg text-center font-semibold transition transform hover:scale-[1.02]">
+
+                    <div class="text-2xl mb-2">💬 WhatsApp</div>
+                    <div class="text-sm opacity-90">Chat with me instantly</div>
+
+                </a>
+
+                <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-lg border border-gray-100">
+                    <h2 class="text-lg font-bold text-gray-900">⚡ Quick Response</h2>
+                    <p class="text-gray-600 mt-2 text-sm">
+                        I usually reply within 24 hours. For urgent work, WhatsApp is faster.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </section>
+    <footer class="text-center py-6 text-gray-500 text-sm">
+        © 2026 Himesh Neupane • 
+        <a href="https://github.com/himesh88" class="text-red-500">GitHub</a> •
+        <a href="https://www.linkedin.com/in/himesh-neupane-51a089257/" class="text-red-500">LinkedIn</a>
     </footer>
-
-    <script src="script.js">  </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
