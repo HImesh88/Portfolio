@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Himesh Neupane | Web Developer & AI Enthusiast</title>
   <link rel="icon" href="assets/favicon.png" type="image/x-icon">
-  <meta name="description" content="Official portfolio of Himesh Neupane. Engineer, researcher, developer, and creator of innovative technology projects and scientific publications.">
+  <meta name="description"
+    content="Official portfolio of Himesh Neupane. Engineer, researcher, developer, and creator of innovative technology projects and scientific publications.">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
@@ -41,10 +42,10 @@
       overflow: hidden;
       user-select: none;
       background:
-    radial-gradient(circle at 20% 20%, rgba(255,0,128,.25), transparent 35%),
-    radial-gradient(circle at 80% 30%, rgba(0,200,255,.25), transparent 35%),
-    radial-gradient(circle at 50% 80%, rgba(0,255,150,.20), transparent 35%),
-    #0a0a0a;
+        radial-gradient(circle at 20% 20%, rgba(255, 0, 128, .25), transparent 35%),
+        radial-gradient(circle at 80% 30%, rgba(0, 200, 255, .25), transparent 35%),
+        radial-gradient(circle at 50% 80%, rgba(0, 255, 150, .20), transparent 35%),
+        #0a0a0a;
     }
 
     /* ── DESKTOP ── */
@@ -863,9 +864,163 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* ── WINDOWS RUN DIALOG ── */
+
+    #win-run {
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+
+      width: 420px;
+
+      background: #202020;
+      color: white;
+
+      border: 1px solid #3a3a3a;
+      border-radius: 14px;
+
+      padding: 18px;
+
+      box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.55);
+
+      z-index: 99999;
+
+      display: none;
+
+      animation: runPopup 0.18s ease;
+    }
+
+    #win-run.active {
+      display: block;
+    }
+
+    @keyframes runPopup {
+      from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.96);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .win-run-header {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+
+      margin-bottom: 18px;
+    }
+
+    .run-icon {
+      width: 46px;
+      height: 46px;
+
+      border-radius: 10px;
+
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 20px;
+      color: white;
+
+      flex-shrink: 0;
+    }
+
+    .run-title {
+      font-size: 20px;
+      font-weight: 600;
+
+      margin-bottom: 4px;
+    }
+
+    .run-subtitle {
+      font-size: 13px;
+      color: #b0b0b0;
+
+      line-height: 1.5;
+    }
+
+    .run-input-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      margin-bottom: 18px;
+    }
+
+    .run-input-area label {
+      font-size: 14px;
+      color: #d0d0d0;
+    }
+
+    #run-command {
+      flex: 1;
+
+      height: 38px;
+
+      background: #111;
+      color: white;
+
+      border: 1px solid #555;
+      border-radius: 8px;
+
+      padding: 0 12px;
+
+      font-size: 14px;
+
+      outline: none;
+    }
+
+    #run-command:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    }
+
+    .run-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .run-buttons button {
+      min-width: 84px;
+      height: 36px;
+
+      border: none;
+      border-radius: 8px;
+
+      background: #2f2f2f;
+      color: white;
+
+      cursor: pointer;
+
+      font-size: 13px;
+      font-weight: 500;
+
+      transition: 0.15s;
+    }
+
+    .run-buttons button:hover {
+      background: #3c3c3c;
+    }
+
+    .run-buttons button:first-child {
+      background: #2563eb;
+    }
+
+    .run-buttons button:first-child:hover {
+      background: #1d4ed8;
+    }
   </style>
-  <meta name="google-site-verification"
-content="gQycYyLcTyHkru-PKl5uU20EUmnJnVlOaWBHW5psY9w" />
+  <meta name="google-site-verification" content="gQycYyLcTyHkru-PKl5uU20EUmnJnVlOaWBHW5psY9w" />
   <script type="application/ld+json">
 {
  "@context":"https://schema.org",
@@ -1052,7 +1207,112 @@ content="gQycYyLcTyHkru-PKl5uU20EUmnJnVlOaWBHW5psY9w" />
     <div class="page-content" id="page-content"></div>
   </div>
 
+  <!-- WINDOWS RUN -->
+  <div id="win-run">
+    <div class="win-run-header">
+      <div class="run-icon">⊞</div>
+
+      <div>
+        <div class="run-title">Run</div>
+        <div class="run-subtitle">
+          Type the name of a page, and press Enter.
+        </div>
+      </div>
+    </div>
+
+    <div class="run-input-area">
+      <label>Open:</label>
+
+      <input type="text" id="run-command" autocomplete="off" spellcheck="false" />
+    </div>
+
+    <div class="run-buttons">
+      <button onclick="executeRunCommand()">OK</button>
+      <button onclick="closeRun()">Cancel</button>
+    </div>
+  </div>
+
   <script>
+    // ── WINDOWS RUN SYSTEM ──
+
+    const winRun = document.getElementById('win-run');
+    const runCommand = document.getElementById('run-command');
+
+    function openRun() {
+      winRun.classList.add('active');
+
+      setTimeout(() => {
+        runCommand.focus();
+      }, 50);
+    }
+
+    function closeRun() {
+      winRun.classList.remove('active');
+      runCommand.value = '';
+    }
+
+    function executeRunCommand() {
+
+      const cmd = runCommand.value
+        .trim()
+        .toLowerCase();
+
+      const commands = {
+        about: 'about',
+        weather: 'weather',
+        rps: 'rps',
+        contact: 'contact',
+        cv: 'cv',
+        resume: 'cv',
+        research: 'research',
+        farmgrow: 'farmgrow',
+        palcare: 'palcare'
+      };
+
+      // INTERNAL PAGES
+      if (commands[cmd]) {
+        openPage(commands[cmd]);
+        closeRun();
+        return;
+      }
+
+      // EXTERNAL COMMANDS
+      if (cmd === 'github') {
+        window.open('https://github.com/HImesh88');
+        closeRun();
+        return;
+      }
+
+      if (cmd === 'linkedin') {
+        window.open('https://linkedin.com');
+        closeRun();
+        return;
+      }
+
+      alert('Command not found.');
+    }
+
+    // ENTER KEY
+    runCommand.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        executeRunCommand();
+      }
+    });
+
+    // OPEN SHORTCUT
+    document.addEventListener('keydown', (e) => {
+
+      // CTRL + R
+      if (e.ctrlKey && e.key.toLowerCase() === 'r') {
+        e.preventDefault();
+        openRun();
+      }
+
+      // ESC
+      if (e.key === 'Escape') {
+        closeRun();
+      }
+    });
     // ── EYEBALL TRACKER ──
     const eyeballs = document.getElementById('eyeballs');
     const pupils = [document.getElementById('pupil1'), document.getElementById('pupil2')];
